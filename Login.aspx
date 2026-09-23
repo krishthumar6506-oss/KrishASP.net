@@ -3,43 +3,72 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-5">
 
             <div class="card shadow mt-5">
+
                 <div class="card-header bg-primary text-white text-center">
-                    <h4>Login</h4>
+                    <h4>Registration</h4>
                 </div>
 
                 <div class="card-body">
 
+                    <!-- Email -->
                     <div class="mb-3">
-                        <label>Username</label>
-                        <asp:TextBox ID="txtUsername" runat="server"
-                            CssClass="form-control"></asp:TextBox>
+                        <label>Email</label>
+                        <asp:TextBox ID="txtEmail"
+                            runat="server"
+                            TextMode="Email"
+                            CssClass="form-control">
+                        </asp:TextBox>
                     </div>
 
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <asp:TextBox ID="txtName"
+                            runat="server"
+                            CssClass="form-control">
+                        </asp:TextBox>
+                    </div>
+
+                    <!-- Password -->
                     <div class="mb-3">
                         <label>Password</label>
-                        <asp:TextBox ID="txtPassword" runat="server"
+                        <asp:TextBox ID="txtPassword"
+                            runat="server"
                             TextMode="Password"
-                            CssClass="form-control"></asp:TextBox>
+                            CssClass="form-control">
+                        </asp:TextBox>
                     </div>
 
-                    <div class="d-grid">
-                        <asp:Button ID="btnLogin"
+                    <!-- Contact Number -->
+                    <div class="mb-3">
+                        <label>Contact No</label>
+                        <asp:TextBox ID="txtContact"
                             runat="server"
-                            Text="Login"
+                            CssClass="form-control">
+                        </asp:TextBox>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="d-grid">
+                        <asp:Button ID="btnRegister"
+                            runat="server"
+                            Text="Register"
                             CssClass="btn btn-primary"
                             OnClick="btnLogin_Click" />
                     </div>
 
+                    <!-- Message -->
                     <div class="mt-3 text-center">
                         <asp:Label ID="lblMessage"
-                            runat="server"
-                            CssClass="text-danger"></asp:Label>
+                            runat="server">
+                        </asp:Label>
                     </div>
 
                 </div>
+
             </div>
 
         </div>
