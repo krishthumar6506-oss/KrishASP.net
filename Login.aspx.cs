@@ -13,7 +13,7 @@ namespace Krish_ASP.net
         {
             string connectionString = "Data Source=(localdb)\\ProjectModels;Initial Catalog=UserManagement;Trusted_Connection=True;";
             SqlConnection connection = new SqlConnection(connectionString);
-            string query = "insert into Users (Email,Name,Password,Contact) Values ('" + txtEmail.Text + "', '" + txtName.Text + "', '" + txtPassword.Text + "', '" + txtContact.Text + "')";
+            string query = "insert into students (Email,Name,Password,Contact) Values ('" + txtEmail.Text + "', '" + txtName.Text + "', '" + txtPassword.Text + "', '" + txtContact.Text + "')";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
             command.ExecuteNonQuery();
