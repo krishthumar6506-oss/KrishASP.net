@@ -125,8 +125,12 @@
     <Content Include="favicon.ico" />
     <Content Include="FileUpload.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HDFChome.aspx" />
+    <Content Include="HDFClogin.aspx" />
     <Content Include="insert.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="New Application.aspx" />
+    <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -156,8 +160,10 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="header.Master" />
+    <Content Include="Student.aspx" />
     <Content Include="studentdetails.aspx" />
     <Content Include="XMLFile.xml" />
+    <Content Include="HDFC.Master" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -246,6 +252,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HDFC.Master.cs">
+      <DependentUpon>HDFC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HDFC.Master.designer.cs">
+      <DependentUpon>HDFC.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HDFChome.aspx.cs">
+      <DependentUpon>HDFChome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HDFChome.aspx.designer.cs">
+      <DependentUpon>HDFChome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HDFClogin.aspx.cs">
+      <DependentUpon>HDFClogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HDFClogin.aspx.designer.cs">
+      <DependentUpon>HDFClogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="header.Master.cs">
       <DependentUpon>header.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,7 +294,21 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="New Application.aspx.cs">
+      <DependentUpon>New Application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New Application.aspx.designer.cs">
+      <DependentUpon>New Application.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +322,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentdetails.aspx.cs">
       <DependentUpon>studentdetails.aspx</DependentUpon>
